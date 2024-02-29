@@ -76,7 +76,7 @@
             let plainText = numberToTest.value;            
             const response = await fetch("https://ciphers-service-hbahramian.onrender.com/ciphers/caesar/" + plainText + "/3");
             const result = await response.json();
-            document.getElementById("cipher").innerText = result;
+            document.getElementById("cipher").innerText = result.cipher;
         }
     </script>
 </body>
